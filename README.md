@@ -71,6 +71,27 @@ if (Database::iud($query, $params, $types)) {
     echo "Record updated successfully!";
 }
 ```
+
+## 🧩 Parameter & Data Types Reference
+
+When using `search()` or `iud()`, you must provide the `$types` string. Each character in the string corresponds to the data type of the variables in the `$params` array.
+
+| Character | Description | PHP/MySQL Data Type |
+| :--- | :--- | :--- |
+| **`i`** | **Integer** | Whole numbers (e.g., 1, 100, -5) |
+| **`s`** | **String** | Text, Varchar, Dates (e.g., "Hello", "2026-03-14") |
+| **`d`** | **Double** | Floating point numbers/Decimals (e.g., 19.99, 0.5) |
+| **`b`** | **Blob** | Binary data (e.g., images, PDF files) |
+
+### Example with multiple types:
+If your query has an **email (string)**, an **age (integer)**, and a **rating (double)**:
+
+```php
+$query = "INSERT INTO survey (email, age, rating) VALUES (?, ?, ?)";
+$params = ["user@example.com", 25, 4.5];
+$types = "sid"; // s = string, i = integer, d = double
+
+Database::iud($query, $params, $types);
 🔒 Security Best Practices
 Environment Protection: Never commit your .env file. It is already added to .gitignore to prevent leaking passwords.
 
