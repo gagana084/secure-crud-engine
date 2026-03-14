@@ -46,7 +46,18 @@ DB_PASSWORD=your_secure_password
 DB_NAME=your_database_name
 DB_PORT=3306
 ```
-📖 Usage Guide
+## 📖 Usage Guide
+
+### 🛠️ Step 1: Include the Engine
+Before using the database, you must include the necessary files at the top of your PHP script.
+
+#### Option A: Using Composer Autoload (Recommended)
+If you followed the installation steps and ran `composer install`, simply include the autoloader:
+```php
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/database/connection.php';
+```
 1. Fetching Data (Read)
 The search() method returns a mysqli_result object.
 ```text
