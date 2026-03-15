@@ -103,6 +103,7 @@ $params = ["user@example.com", 25, 4.5];
 $types = "sid"; // s = string, i = integer, d = double
 
 Database::iud($query, $params, $types);
+```
 🔒 Security Best Practices
 Environment Protection: Never commit your .env file. It is already added to .gitignore to prevent leaking passwords.
 
