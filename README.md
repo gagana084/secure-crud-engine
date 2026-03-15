@@ -17,14 +17,15 @@ project-root/
 │
 ├── config/
 │   ├── Env.php             # Dotenv loader wrapper
-│   └── db_config.php       # Database parameter mapping
+│   
 │
 ├── src/
-│   └── Database.php        # Core CRUD Engine class
+│   └── connection.php        # Core CRUD Engine class
+|   └── db_config.php       # Database parameter mapping
 │
-├── .env                    # Private credentials (DO NOT UPLOAD)
-├── .gitignore              # Prevents sensitive files from being tracked
-└── composer.json           # Dependencies (phpdotenv)
+├── .env                  
+├── .gitignore              
+└── composer.json         
 ```
 🛠️ Installation & Setup
 Clone the repository:
