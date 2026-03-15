@@ -19,7 +19,7 @@ project-root/
 │   ├── Env.php             # Dotenv loader wrapper
 │   
 │
-├── src/
+├── database/
 │   └── connection.php        # Core CRUD Engine class
 |   └── db_config.php       # Database parameter mapping
 │
