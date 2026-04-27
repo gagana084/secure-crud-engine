@@ -31,7 +31,7 @@ project-root/
 Clone the repository:
 
 ```text
-git clone [https://github.com/your-username/secure-crud-engine.git](https://github.com/your-username/secure-crud-engine.git)
+git clone https://github.com/gagana084/secure-crud-engine.git
 ```
 Install Dependencies:
 Ensure you have Composer installed, then run:
